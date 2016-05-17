@@ -1,14 +1,32 @@
 <resources>
 
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#4b2e83</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#b7a57a</item>
+        <item name="android:textColorPrimary">#b7a57a</item>
+    </style>
+
     <!-- TODO: Add own styles here! -->
 
+    <style name="TextStyle" parent="AppTheme">
+        <item name="android:textColor">?colorPrimary</item>
+        <item name="android:textSize">22sp</item>
+    </style>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="Label" parent="TextStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Gold" parent="Label">
+        <item name="android:background">?colorPrimaryDark</item>
+        <item name="android:textColor">?colorAccent</item>
+    </style>
+
+    <style name="NewButton" parent="android:MediaButton">
+        <item name="android:textSize">22sp</item>
     </style>
 
 </resources>
